@@ -13,6 +13,7 @@ func _ready():
 #	$BG/snowing/snow2.emitting = true
 	$BG/Smoke.playing = true
 	$Singleton/AudioStreamPlayer.play()
+	$Kaleigh/TextEdit.grab_focus()
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -28,6 +29,7 @@ func _on_Button_pressed():
 	Singleton.sIdea = $Stephanie/TextEdit.text
 	Singleton.tIdea = $Trevor/TextEdit.text
 	Singleton.cIdea = $Craig/TextEdit.text
+	Singleton.mIdea = $Mom/TextEdit.text
 	Singleton.musicTime = $Singleton/AudioStreamPlayer.get_playback_position()
 	Singleton.santaPosition = $BG/SantaSil/Sprite.global_position
 	get_tree().change_scene("res://NamePicker.tscn")

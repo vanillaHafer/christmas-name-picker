@@ -93,19 +93,19 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -77.1256
-margin_top = -233.972
-margin_right = 172.874
-margin_bottom = -153.972
+margin_left = 252.0
+margin_top = -104.0
+margin_right = 502.0
+margin_bottom = -24.0
 rect_scale = Vector2( 0.6, 0.6 )
 texture_normal = ExtResource( 13 )
 texture_hover = ExtResource( 12 )
 
 [node name="Picker" type="Label" parent="."]
-margin_left = 443.0
-margin_top = 75.1457
-margin_right = 570.0
-margin_bottom = 103.146
+margin_left = 772.126
+margin_top = 205.118
+margin_right = 899.126
+margin_bottom = 233.118
 custom_fonts/font = SubResource( 2 )
 text = "Receiver"
 align = 1
@@ -115,10 +115,11 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -20.0
+margin_left = -166.759
 margin_top = -169.349
-margin_right = 20.0
+margin_right = -126.759
 margin_bottom = -129.349
+rect_scale = Vector2( 0.75, 0.75 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -202,10 +203,11 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -20.0
+margin_left = -166.759
 margin_top = -100.995
-margin_right = 20.0
+margin_right = -126.759
 margin_bottom = -60.9946
+rect_scale = Vector2( 0.75, 0.75 )
 
 [node name="Panel" type="Panel" parent="Pair2"]
 modulate = Color( 1, 1, 1, 0.490196 )
@@ -286,12 +288,12 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -21.2407
+margin_left = -168.0
 margin_top = -34.2295
-margin_right = 18.7593
+margin_right = -128.0
 margin_bottom = 5.77051
+rect_scale = Vector2( 0.75, 0.75 )
 __meta__ = {
-"_edit_lock_": true,
 "_edit_use_anchors_": false
 }
 
@@ -374,10 +376,11 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -20.0
+margin_left = -166.759
 margin_top = 30.9463
-margin_right = 20.0
+margin_right = -126.759
 margin_bottom = 70.9463
+rect_scale = Vector2( 0.75, 0.75 )
 
 [node name="Panel" type="Panel" parent="Pair4"]
 modulate = Color( 1, 1, 1, 0.490196 )
@@ -458,10 +461,11 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -20.0
+margin_left = -166.759
 margin_top = 94.5313
-margin_right = 20.0
+margin_right = -126.759
 margin_bottom = 134.531
+rect_scale = Vector2( 0.75, 0.75 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -545,13 +549,11 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -20.0
+margin_left = -166.759
 margin_top = 154.938
-margin_right = 20.0
+margin_right = -126.759
 margin_bottom = 194.938
-__meta__ = {
-"_edit_use_anchors_": false
-}
+rect_scale = Vector2( 0.75, 0.75 )
 
 [node name="Panel" type="Panel" parent="Pair6"]
 modulate = Color( 1, 1, 1, 0.490196 )
@@ -630,6 +632,95 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Pair7" type="Control" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -166.759
+margin_top = 214.0
+margin_right = -126.759
+margin_bottom = 254.0
+rect_scale = Vector2( 0.75, 0.75 )
+
+[node name="Panel" type="Panel" parent="Pair7"]
+modulate = Color( 1, 1, 1, 0.490196 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -339.997
+margin_top = -24.0
+margin_right = -109.997
+margin_bottom = 24.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Giver" type="Label" parent="Pair7"]
+modulate = Color( 0.988235, 0.988235, 0.988235, 1 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -331.311
+margin_top = -14.0
+margin_right = -121.311
+margin_bottom = 14.0
+custom_fonts/font = SubResource( 3 )
+text = "Mom"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="isGivingTo" type="Label" parent="Pair7"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -104.321
+margin_top = -18.5
+margin_right = 71.6791
+margin_bottom = 18.5
+custom_fonts/font = SubResource( 4 )
+text = "is giving to"
+align = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel2" type="Panel" parent="Pair7"]
+modulate = Color( 1, 1, 1, 0.490196 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 104.555
+margin_top = -20.0
+margin_right = 334.555
+margin_bottom = 28.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Receiver" type="Label" parent="Pair7"]
+modulate = Color( 0.988235, 0.988235, 0.988235, 1 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 115.269
+margin_top = -14.0
+margin_right = 325.269
+margin_bottom = 14.0
+custom_fonts/font = SubResource( 5 )
+text = "Kaleigh and Garrett"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="Reset" type="Button" parent="."]
 modulate = Color( 0.901961, 0, 0, 1 )
 anchor_left = 0.5
@@ -660,16 +751,18 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -458.5
-margin_top = 235.853
-margin_right = 458.5
-margin_bottom = 287.853
-custom_fonts/font = SubResource( 6 )
+margin_left = 143.0
+margin_top = -63.0
+margin_right = 507.0
+margin_bottom = 121.0
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_constants/shadow_offset_x = 3
 custom_constants/shadow_offset_y = 2
-text = "MYSTERY IDEA"
+custom_fonts/font = SubResource( 6 )
+text = "MYSTERY IDEA "
 align = 1
+valign = 1
+autowrap = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -686,7 +779,7 @@ __meta__ = {
 }
 
 [node name="Present" type="Node2D" parent="."]
-position = Vector2( 257.927, 282.736 )
+position = Vector2( 588, 55 )
 scale = Vector2( 0.5, 0.5 )
 
 [node name="Body" type="Sprite" parent="Present"]
@@ -706,6 +799,7 @@ one_shot = true
 [node name="Singleton" parent="." instance=ExtResource( 14 )]
 
 [node name="MuteButton" parent="." instance=ExtResource( 10 )]
+
 [connection signal="pressed" from="PickA" to="." method="_on_PickA_pressed"]
 [connection signal="pressed" from="Reset" to="." method="_on_Reset_pressed"]
 [connection signal="pressed" from="Reveal" to="." method="_on_Reveal_pressed"]

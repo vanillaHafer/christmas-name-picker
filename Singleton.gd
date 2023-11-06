@@ -1,7 +1,7 @@
 extends Node
 
-var giversAssigned    = [false,false,false,false,false,false, true]
-var receiversAssigned = [false,false,false,false,false,false, true]
+var giversAssigned    = [false,false,false,false,false,false,false, true]
+var receiversAssigned = [false,false,false,false,false,false,false, true]
 
 var pickingGiver = true
 var givers    = 0
@@ -12,8 +12,8 @@ var santaPosition
 var santaMoving = false
 var muted = false
 
-var giverNames    = ["Kaleigh and Garrett", "Dillon and Hunter", "Heather and Joe", "Steph and Scot", "Trevor and Emily", "Craig and Claire"]
-var receiverNames = ["Kaleigh and Garrett", "Dillon and Hunter", "Heather and Joe", "Steph and Scot", "Trevor and Emily", "Craig and Claire"]
+var giverNames    = ["Kaleigh and Garrett", "Dillon and Hunter", "Heather and Joe", "Steph and Scot", "Trevor and Emily", "Craig and Claire", "Mom"]
+var receiverNames = ["Kaleigh and Garrett", "Dillon and Hunter", "Heather and Joe", "Steph and Scot", "Trevor and Emily", "Craig and Claire", "Mom"]
 
 var nameConflictPossible = false
 
@@ -25,6 +25,7 @@ var hIdea = ""
 var sIdea = ""
 var tIdea = ""
 var cIdea = ""
+var mIdea = ""
 
 func _process(delta):
 	if(muted):

@@ -52,7 +52,6 @@ __meta__ = {
 position = Vector2( 0, 168 )
 
 [node name="Smoke" parent="BG" instance=ExtResource( 5 )]
-frame = 3
 
 [node name="Label" type="Label" parent="."]
 anchor_left = 0.5
@@ -225,6 +224,41 @@ margin_left = 59.4423
 margin_top = 225.0
 margin_right = 274.442
 margin_bottom = 263.0
+focus_next = NodePath("../../Craig/TextEdit")
+custom_fonts/font = SubResource( 3 )
+align = 1
+max_length = 40
+caret_blink = true
+caret_blink_speed = 0.3
+
+[node name="Mom" type="Control" parent="."]
+margin_left = 341.165
+margin_top = 292.742
+margin_right = 381.165
+margin_bottom = 332.742
+
+[node name="Label" type="Label" parent="Mom"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 31.5965
+margin_top = 157.0
+margin_right = 268.596
+margin_bottom = 194.0
+custom_fonts/font = SubResource( 2 )
+text = "Mom"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextEdit" type="LineEdit" parent="Mom"]
+modulate = Color( 1, 1, 1, 0.898039 )
+margin_left = 59.4423
+margin_top = 225.0
+margin_right = 274.442
+margin_bottom = 263.0
 custom_fonts/font = SubResource( 3 )
 align = 1
 max_length = 40
@@ -258,6 +292,7 @@ margin_left = 59.4423
 margin_top = 225.0
 margin_right = 274.442
 margin_bottom = 263.0
+focus_next = NodePath("../../Mom/TextEdit")
 custom_fonts/font = SubResource( 3 )
 align = 1
 max_length = 40
@@ -269,9 +304,9 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -74.4613
+margin_left = 281.0
 margin_top = 211.822
-margin_right = 175.539
+margin_right = 531.0
 margin_bottom = 291.822
 rect_scale = Vector2( 0.6, 0.6 )
 texture_normal = ExtResource( 9 )
@@ -282,9 +317,9 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-margin_left = -30.0
+margin_left = 325.461
 margin_top = -78.5286
-margin_right = 30.0
+margin_right = 385.461
 margin_bottom = -50.5286
 custom_fonts/font = SubResource( 4 )
 text = "NEXT"
@@ -292,4 +327,7 @@ text = "NEXT"
 [node name="Singleton" parent="." instance=ExtResource( 10 )]
 
 [node name="MuteButton" parent="." instance=ExtResource( 6 )]
+margin_left = 46.0
+margin_right = 1966.0
+
 [connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]

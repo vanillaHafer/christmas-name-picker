@@ -34,6 +34,8 @@ func _ready():
 	$Pair5/Receiver.visible = false
 	$Pair6/Giver.visible = false
 	$Pair6/Receiver.visible = false
+	$Pair7/Giver.visible = false
+	$Pair7/Receiver.visible = false
 	
 func _process(delta):
 	if(Input.is_action_just_pressed("ui_cancel")):
@@ -75,9 +77,9 @@ func _on_PickA_pressed():
 		reveal()
 			
 func chooseAGiver():
-	randomPerson = (randi() % 6)
+	randomPerson = (randi() % 7)
 	while(Singleton.giversAssigned[randomPerson]):
-		randomPerson = (randi() % 6)
+		randomPerson = (randi() % 7)
 	Singleton.giversAssigned[randomPerson] = true
 	Singleton.recentGiver = randomPerson
 	Singleton.givers += 1
@@ -102,16 +104,19 @@ func chooseAGiver():
 		'5':
 			$Pair6/Giver.text = nameFromNumber(randomPerson)
 			$Pair6/Giver.visible = true
+		'6':
+			$Pair7/Giver.text = nameFromNumber(randomPerson)
+			$Pair7/Giver.visible = true
 			
 	$Picker.text = 'Receiver'
 	
 func chooseAReceiver():
-	randomPerson = (randi() % 6)
+	randomPerson = (randi() % 7)
 	while(Singleton.receiversAssigned[randomPerson] || randomPerson == Singleton.recentGiver):
-		randomPerson = (randi() % 6)
+		randomPerson = (randi() % 7)
 	
 	# Check to make sure the last receiver won't be the same as the last giver
-	if(Singleton.receivers == 4):
+	if(Singleton.receivers == 5):
 		for i in Singleton.receiverNames:
 			if(i == Singleton.giverNames[0]):
 				Singleton.nameConflictPossible = true
@@ -144,8 +149,11 @@ func chooseAReceiver():
 		'5':
 			$Pair6/Receiver.text = nameFromNumber(randomPerson)
 			$Pair6/Receiver.visible = true
+		'6':
+			$Pair7/Receiver.text = nameFromNumber(randomPerson)
+			$Pair7/Receiver.visible = true
 		
-	if(Singleton.receivers <= 5):
+	if(Singleton.receivers <= 6):
 		$Picker.text = 'Giver'
 	else:
 		$Picker.text = 'Reveal!'
@@ -166,16 +174,18 @@ func nameFromNumber(number):
 			return "Trevor and Emily"
 		'5':
 			return "Craig and Claire"
+		'6':
+			return "Mom"
 
 func _on_Reset_pressed():
-	Singleton.giversAssigned    = [false,false,false,false,false,false, true]
-	Singleton.receiversAssigned = [false,false,false,false,false,false, true]
+	Singleton.giversAssigned    = [false,false,false,false,false,false,false, true]
+	Singleton.receiversAssigned = [false,false,false,false,false,false,false, true]
 	Singleton.pickingGiver = true
 	Singleton.givers = 0
 	Singleton.receivers = 0
 	Singleton.recentGiver = 99
-	Singleton.giverNames    = ["Kaleigh and Garrett", "Dillon and Hunter", "Heather and Joe", "Steph and Scot", "Trevor and Emily", "Craig and Claire"]
-	Singleton.receiverNames = ["Kaleigh and Garrett", "Dillon and Hunter", "Heather and Joe", "Steph and Scot", "Trevor and Emily", "Craig and Claire"]
+	Singleton.giverNames    = ["Kaleigh and Garrett", "Dillon and Hunter", "Heather and Joe", "Steph and Scot", "Trevor and Emily", "Craig and Claire", "Mom"]
+	Singleton.receiverNames = ["Kaleigh and Garrett", "Dillon and Hunter", "Heather and Joe", "Steph and Scot", "Trevor and Emily", "Craig and Claire", "Mom"]
 	Singleton.nameConflictPossible = false
 	Singleton.passesThrough += 1
 	get_tree().change_scene("res://NamePicker.tscn")
@@ -200,6 +210,8 @@ func reveal():
 			$MysteryIdea.text = Singleton.tIdea
 		'5':
 			$MysteryIdea.text = Singleton.cIdea
+		'6':
+			$MysteryIdea.text = Singleton.mIdea
 
 func _on_IdeaTimer_timeout():
 	$MysteryIdea.secret = false
