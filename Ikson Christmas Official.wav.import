@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Ikson Christmas Official.wav-4ce7d83acf19c9b20d9869da82e0a39e.sample"
+
+[deps]
+
+source_file="res://Ikson Christmas Official.wav"
+dest_files=[ "res://.import/Ikson Christmas Official.wav-4ce7d83acf19c9b20d9869da82e0a39e.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

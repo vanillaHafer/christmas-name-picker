@@ -1,0 +1,295 @@
+[gd_scene load_steps=15 format=2]
+
+[ext_resource path="res://Comic_Neue/ComicNeue-Bold.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Comic_Neue/ComicNeue-Regular.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://IdeaCreator.gd" type="Script" id=3]
+[ext_resource path="res://Christmas.png" type="Texture" id=4]
+[ext_resource path="res://Smoke.tscn" type="PackedScene" id=5]
+[ext_resource path="res://MuteButton.tscn" type="PackedScene" id=6]
+[ext_resource path="res://SantaSil.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Candy button 01 Artboard 1.png" type="Texture" id=8]
+[ext_resource path="res://Candy button 02 Artboard 2.png" type="Texture" id=9]
+[ext_resource path="res://Singleton.tscn" type="PackedScene" id=10]
+
+[sub_resource type="DynamicFont" id=1]
+size = 48
+outline_size = 4
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 32
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 24
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 24
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 1 )
+
+[node name="IdeaCreator" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BG" type="TextureRect" parent="."]
+margin_top = -168.0
+margin_right = 1024.0
+margin_bottom = 600.0
+texture = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SantaSil" parent="BG" instance=ExtResource( 7 )]
+position = Vector2( 0, 168 )
+
+[node name="Smoke" parent="BG" instance=ExtResource( 5 )]
+frame = 3
+
+[node name="Label" type="Label" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -267.0
+margin_top = 58.822
+margin_right = 267.0
+margin_bottom = 114.822
+custom_fonts/font = SubResource( 1 )
+text = "Theme Suggestions"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Kaleigh" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="Label" type="Label" parent="Kaleigh"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 12.664
+margin_top = 155.492
+margin_right = 288.664
+margin_bottom = 192.492
+custom_fonts/font = SubResource( 2 )
+text = "Kaleigh and Garrett"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextEdit" type="LineEdit" parent="Kaleigh"]
+modulate = Color( 1, 1, 1, 0.898039 )
+margin_left = 61.2472
+margin_top = 225.0
+margin_right = 276.247
+margin_bottom = 263.0
+custom_fonts/font = SubResource( 3 )
+align = 1
+max_length = 40
+caret_blink = true
+caret_blink_speed = 0.3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Dillon" type="Control" parent="."]
+margin_left = 341.165
+margin_right = 381.165
+margin_bottom = 40.0
+
+[node name="Label" type="Label" parent="Dillon"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 27.2775
+margin_top = 157.0
+margin_right = 274.277
+margin_bottom = 194.0
+custom_fonts/font = SubResource( 2 )
+text = "Dillon and Hunter"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextEdit" type="LineEdit" parent="Dillon"]
+modulate = Color( 1, 1, 1, 0.898039 )
+margin_left = 60.9048
+margin_top = 225.0
+margin_right = 275.905
+margin_bottom = 263.0
+custom_fonts/font = SubResource( 3 )
+align = 1
+max_length = 40
+caret_blink = true
+caret_blink_speed = 0.3
+
+[node name="Heather" type="Control" parent="."]
+margin_left = 695.536
+margin_right = 735.536
+margin_bottom = 40.0
+
+[node name="Label" type="Label" parent="Heather"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 34.7324
+margin_top = 157.0
+margin_right = 266.732
+margin_bottom = 194.0
+custom_fonts/font = SubResource( 2 )
+text = "Heather and Joe"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextEdit" type="LineEdit" parent="Heather"]
+modulate = Color( 1, 1, 1, 0.898039 )
+margin_left = 59.4423
+margin_top = 225.0
+margin_right = 274.442
+margin_bottom = 263.0
+custom_fonts/font = SubResource( 3 )
+align = 1
+max_length = 40
+caret_blink = true
+caret_blink_speed = 0.3
+
+[node name="Stephanie" type="Control" parent="."]
+margin_top = 146.371
+margin_right = 40.0
+margin_bottom = 186.371
+
+[node name="Label" type="Label" parent="Stephanie"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 42.0073
+margin_top = 157.0
+margin_right = 252.007
+margin_bottom = 194.0
+custom_fonts/font = SubResource( 2 )
+text = "Steph and Scot"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextEdit" type="LineEdit" parent="Stephanie"]
+modulate = Color( 1, 1, 1, 0.898039 )
+margin_left = 59.4423
+margin_top = 225.0
+margin_right = 274.442
+margin_bottom = 263.0
+custom_fonts/font = SubResource( 3 )
+align = 1
+max_length = 40
+caret_blink = true
+caret_blink_speed = 0.3
+
+[node name="Trevor" type="Control" parent="."]
+margin_left = 341.165
+margin_top = 146.371
+margin_right = 381.165
+margin_bottom = 186.371
+
+[node name="Label" type="Label" parent="Trevor"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 31.5965
+margin_top = 157.0
+margin_right = 268.596
+margin_bottom = 194.0
+custom_fonts/font = SubResource( 2 )
+text = "Trevor and Emily"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextEdit" type="LineEdit" parent="Trevor"]
+modulate = Color( 1, 1, 1, 0.898039 )
+margin_left = 59.4423
+margin_top = 225.0
+margin_right = 274.442
+margin_bottom = 263.0
+custom_fonts/font = SubResource( 3 )
+align = 1
+max_length = 40
+caret_blink = true
+caret_blink_speed = 0.3
+
+[node name="Craig" type="Control" parent="."]
+margin_left = 695.536
+margin_top = 146.371
+margin_right = 735.536
+margin_bottom = 186.371
+
+[node name="Label" type="Label" parent="Craig"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 31.5724
+margin_top = 157.0
+margin_right = 257.572
+margin_bottom = 194.0
+custom_fonts/font = SubResource( 2 )
+text = "Craig and Claire"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextEdit" type="LineEdit" parent="Craig"]
+modulate = Color( 1, 1, 1, 0.898039 )
+margin_left = 59.4423
+margin_top = 225.0
+margin_right = 274.442
+margin_bottom = 263.0
+custom_fonts/font = SubResource( 3 )
+align = 1
+max_length = 40
+caret_blink = true
+caret_blink_speed = 0.3
+
+[node name="Button" type="TextureButton" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -74.4613
+margin_top = 211.822
+margin_right = 175.539
+margin_bottom = 291.822
+rect_scale = Vector2( 0.6, 0.6 )
+texture_normal = ExtResource( 9 )
+texture_hover = ExtResource( 8 )
+
+[node name="Label2" type="Label" parent="."]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -30.0
+margin_top = -78.5286
+margin_right = 30.0
+margin_bottom = -50.5286
+custom_fonts/font = SubResource( 4 )
+text = "NEXT"
+
+[node name="Singleton" parent="." instance=ExtResource( 10 )]
+
+[node name="MuteButton" parent="." instance=ExtResource( 6 )]
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
