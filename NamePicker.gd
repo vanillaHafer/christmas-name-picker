@@ -38,6 +38,11 @@ func _ready():
 	$Pair7/Receiver.visible = false
 	
 func _process(delta):
+	if(Input.is_action_pressed("command") and Input.is_action_pressed("cousins")):
+		Singleton.musicTime = $Singleton/AudioStreamPlayer.get_playback_position()
+		Singleton.santaPosition = $BG/SantaSil/Sprite.global_position
+		get_tree().change_scene("res://CousinPicker.tscn")
+		
 	if(Input.is_action_just_pressed("ui_cancel")):
 		get_tree().quit()
 	
@@ -126,7 +131,7 @@ func chooseAReceiver():
 		if(Singleton.nameConflictPossible):
 			while(Singleton.giverNames[0] != nameFromNumber(randomPerson)):
 				while(Singleton.receiversAssigned[randomPerson] || randomPerson == Singleton.recentGiver || nameFromNumber(randomPerson) != Singleton.giverNames[0]):
-					randomPerson = (randi() % 6)
+					randomPerson = (randi() % 7)
 	Singleton.receiversAssigned[randomPerson] = true
 	Singleton.receiverNames.erase(nameFromNumber(randomPerson))
 	Singleton.receivers += 1
@@ -197,7 +202,7 @@ func reveal():
 	$PickA.queue_free()
 	$Picker.queue_free()
 	presentOpening = true
-	match(str(randi() % 6)):
+	match(str(randi() % 7)):
 		'0':
 			$MysteryIdea.text = Singleton.kIdea
 		'1':

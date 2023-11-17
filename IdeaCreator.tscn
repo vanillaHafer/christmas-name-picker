@@ -37,9 +37,6 @@ font_data = ExtResource( 1 )
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 3 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="BG" type="TextureRect" parent="."]
 margin_top = -168.0
@@ -54,7 +51,7 @@ __meta__ = {
 position = Vector2( 0, 168 )
 
 [node name="Smoke" parent="BG" instance=ExtResource( 5 )]
-frame = 1
+frame = 5
 
 [node name="Label" type="Label" parent="."]
 anchor_left = 0.5

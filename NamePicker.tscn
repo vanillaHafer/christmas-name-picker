@@ -86,9 +86,6 @@ margin_right = 302.0
 margin_bottom = -242.895
 custom_fonts/normal_font = SubResource( 1 )
 text = "Welcome to the 2021 Holiday Name Picker!"
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="PickA" type="TextureButton" parent="."]
 anchor_left = 0.5
