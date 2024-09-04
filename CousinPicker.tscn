@@ -115,8 +115,6 @@ one_shot = true
 
 [node name="Singleton" parent="." instance=ExtResource( 13 )]
 
-[node name="MuteButton" parent="." instance=ExtResource( 14 )]
-
 [node name="Pairs" type="Control" parent="."]
 margin_left = -16.0
 margin_top = 99.0
@@ -1259,6 +1257,22 @@ custom_fonts/normal_font = SubResource( 6 )
 bbcode_enabled = true
 bbcode_text = "[center]Welcome to the 2021 Holiday Name Picker![/center]"
 text = "Welcome to the 2021 Holiday Name Picker!"
+
+[node name="Mute" type="Control" parent="."]
+margin_left = 400.0
+margin_top = 124.0
+margin_right = 440.0
+margin_bottom = 164.0
+rect_scale = Vector2( 0.75, 0.75 )
+rect_pivot_offset = Vector2( -612, 66 )
+
+[node name="Panel" type="Panel" parent="Mute"]
+margin_left = 853.0
+margin_top = 459.0
+margin_right = 994.0
+margin_bottom = 583.0
+
+[node name="MuteButton" parent="Mute" instance=ExtResource( 14 )]
 
 [connection signal="pressed" from="PickA" to="." method="_on_PickA_pressed"]
 [connection signal="pressed" from="Reset" to="." method="_on_Reset_pressed"]

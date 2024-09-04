@@ -4,14 +4,12 @@
 [ext_resource path="res://MuteButton.gd" type="Script" id=2]
 
 [node name="MuteButton" type="TextureButton"]
-margin_left = 900.131
-margin_top = 523.444
-margin_right = 2820.13
-margin_bottom = 1483.44
-rect_scale = Vector2( 0.05, 0.05 )
+margin_left = 873.0
+margin_top = 470.0
+margin_right = 2793.0
+margin_bottom = 1430.0
+rect_scale = Vector2( 0.2, 0.2 )
 texture_normal = ExtResource( 1 )
 script = ExtResource( 2 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+
 [connection signal="pressed" from="." to="." method="_on_MuteButton_pressed"]
