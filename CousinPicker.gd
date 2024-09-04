@@ -4,7 +4,7 @@ var randomPerson = Singleton.cousins.size()
 var revealTime = false
 
 func _ready():
-	$RichTextLabel.text = "Welcome to the " + str(OS.get_date().year) + " Holiday Name Picker!"
+	$RichTextLabel.bbcode_text = "[center]" + str(OS.get_date().year) + " Cousin's Gift Exchange[/center]"
 	
 	# Initialize the Singleton
 	reset()

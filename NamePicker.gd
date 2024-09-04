@@ -12,7 +12,7 @@ onready var lidPositionY = $Present/Lid.position.y
 
 func _ready():
 	randomize()
-	$RichTextLabel.text = "Welcome to the " + str(OS.get_date().year + 1) + " Holiday Name Picker!"
+	$RichTextLabel.bbcode_text = "[center]Welcome to the " + str(OS.get_date().year) + " Holiday Name Picker![/center]"
 	$BG/SantaSil/Sprite.global_position = Singleton.santaPosition
 	$Singleton/AudioStreamPlayer.play(Singleton.musicTime)
 	$MysteryIdea.text = "MYSTERY"
