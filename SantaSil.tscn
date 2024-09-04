@@ -1,4 +1,4 @@
-[gd_scene load_steps=99 format=2]
+[gd_scene load_steps=100 format=2]
 
 [ext_resource path="res://SantaSil.gd" type="Script" id=1]
 [ext_resource path="res://Santa/45336bf2d2c94e0cb7d11bc3a644b50eYUDLMJjn3Y2DA0wA-71.png" type="Texture" id=2]
@@ -97,6 +97,7 @@
 [ext_resource path="res://Santa/45336bf2d2c94e0cb7d11bc3a644b50eYUDLMJjn3Y2DA0wA-80.png" type="Texture" id=95]
 [ext_resource path="res://Santa/45336bf2d2c94e0cb7d11bc3a644b50eYUDLMJjn3Y2DA0wA-90.png" type="Texture" id=96]
 [ext_resource path="res://Santa/45336bf2d2c94e0cb7d11bc3a644b50eYUDLMJjn3Y2DA0wA-93.png" type="Texture" id=97]
+[ext_resource path="res://hohoho.mp3" type="AudioStream" id=98]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -115,7 +116,7 @@ position = Vector2( 1143.8, 65.7378 )
 rotation = -0.261799
 scale = Vector2( 0.1, 0.1 )
 frames = SubResource( 1 )
-frame = 33
+frame = 95
 playing = true
 
 [node name="Position2D" type="Position2D" parent="."]
@@ -126,5 +127,18 @@ one_shot = true
 
 [node name="startingTimer" type="Timer" parent="."]
 one_shot = true
+
+[node name="HoHoHo" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 98 )
+volume_db = -25.616
+
+[node name="NoNoNoTimer" type="Timer" parent="."]
+one_shot = true
+
+[node name="HoHoHoTimer" type="Timer" parent="."]
+one_shot = true
+
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
 [connection signal="timeout" from="startingTimer" to="." method="_on_startingTimer_timeout"]
+[connection signal="timeout" from="NoNoNoTimer" to="." method="_on_NoNoNoTimer_timeout"]
+[connection signal="timeout" from="HoHoHoTimer" to="." method="_on_HoHoHoTimer_timeout"]

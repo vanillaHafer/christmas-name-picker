@@ -17,6 +17,7 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
+
 	if(Singleton.santaMoving):
 		if(currentDistance % 70 == 0):
 			pass
@@ -36,12 +37,24 @@ func _process(delta):
 		if($Sprite.position.x <= $Position2D.position.x && timerStarted == false):
 			timerStarted = true
 			$Timer.start((randi() % 10) + 11)
+			
+func HoHoHo():
+	$HoHoHo.play()
+	$NoNoNoTimer.start(7)
 
 func _on_Timer_timeout():
-		$Sprite.position.x = startingPosition
-		currentDistance = 0
-		timerStarted = false
-
+	$Sprite.position.x = startingPosition
+	currentDistance = 0
+	timerStarted = false
+	$HoHoHoTimer.start(3)
+	
 
 func _on_startingTimer_timeout():
 	Singleton.santaMoving = true
+	$HoHoHoTimer.start(3)
+
+func _on_HoHoHoTimer_timeout():
+	HoHoHo()
+
+func _on_NoNoNoTimer_timeout():
+	$HoHoHo.stop()

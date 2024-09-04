@@ -58,7 +58,7 @@ func _process(delta):
 	if(muted):
 		$AudioStreamPlayer.volume_db = -80
 	else:
-		$AudioStreamPlayer.volume_db = -80#0
+		$AudioStreamPlayer.volume_db = 0
 
 func _on_AudioStreamPlayer_finished():
 	$AudioStreamPlayer.play()

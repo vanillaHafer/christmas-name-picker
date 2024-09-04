@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/hohoho.mp3-64ea97192ce6e4f81dcf99154c89ec5f.mp3str"
+
+[deps]
+
+source_file="res://hohoho.mp3"
+dest_files=[ "res://.import/hohoho.mp3-64ea97192ce6e4f81dcf99154c89ec5f.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
