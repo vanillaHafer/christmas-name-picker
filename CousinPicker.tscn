@@ -86,27 +86,6 @@ custom_fonts/font = SubResource( 2 )
 text = "Receiver"
 align = 1
 
-[node name="Reset" type="Button" parent="."]
-modulate = Color( 0.901961, 0, 0, 1 )
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = 597.0
-margin_top = -293.0
-margin_right = 675.0
-margin_bottom = -273.0
-disabled = true
-text = "CLEAR ALL"
-
-[node name="Label" type="Label" parent="."]
-margin_left = -64.3489
-margin_top = 37.0706
-margin_right = -24.3489
-margin_bottom = 51.0706
-text = "0"
-align = 2
-
 [node name="IdeaTimer" type="Timer" parent="."]
 one_shot = true
 
@@ -160,9 +139,6 @@ margin_bottom = 14.0
 custom_fonts/font = SubResource( 3 )
 text = "Ethan"
 align = 1
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="isGivingTo" type="Label" parent="Pairs/Pair1"]
 anchor_left = 0.5
@@ -1275,6 +1251,5 @@ margin_bottom = 583.0
 [node name="MuteButton" parent="Mute" instance=ExtResource( 14 )]
 
 [connection signal="pressed" from="PickA" to="." method="_on_PickA_pressed"]
-[connection signal="pressed" from="Reset" to="." method="_on_Reset_pressed"]
 [connection signal="timeout" from="IdeaTimer" to="." method="_on_IdeaTimer_timeout"]
 [connection signal="timeout" from="PresentTimer" to="." method="_on_PresentTimer_timeout"]

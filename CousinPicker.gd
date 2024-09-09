@@ -2,34 +2,32 @@ extends Control
 
 var randomPerson = Singleton.cousins.size()
 var revealTime = false
+var pickingCousinGiver = true
+var recentCousinGiver = 99
+var cousinGiversAssigned = [false,false,false,false,false,false,false,false,false,false,false,false,false, true]
+var cousinReceiversAssigned = [false,false,false,false,false,false,false,false,false,false,false,false,false, true]
 
 func _ready():
+	# Initialize the scene
 	$RichTextLabel.bbcode_text = "[center]" + str(OS.get_date().year) + " Cousin's Gift Exchange[/center]"
-	
-	# Initialize the Singleton
-	reset()
-	
-	# Randomize the seed
 	randomize()
-	
-	# Initialize Santa
 	$BG/SantaSil/Sprite.global_position = Singleton.santaPosition
-	
-	# Start the music
 	$Singleton/AudioStreamPlayer.play(Singleton.musicTime)
-	
-	# Initialize button text
 	$Picker.text = 'Giver'
-	
-	# Debug info
-	$Label.text = str(Singleton.passesThrough)
-	
-	# Let it snow
 	$BG/snowing/snow1.emitting = true
 	$BG/snowing/snow2.emitting = true
 	$BG/Smoke.playing = true
+	hide_cousins()
+	assign_cousins()
 	
-	# Hide the cousins
+func _process(delta):
+	if(Input.is_action_just_pressed("ui_cancel")):
+		get_tree().quit()
+
+func _on_PickA_pressed():
+	reveal()
+
+func hide_cousins():
 	$Pairs/Pair1/Giver.visible = false
 	$Pairs/Pair1/Receiver.visible = false
 	$Pairs/Pair2/Giver.visible = false
@@ -56,30 +54,16 @@ func _ready():
 	$Pairs/Pair12/Receiver.visible = false
 	$Pairs/Pair13/Giver.visible = false
 	$Pairs/Pair13/Receiver.visible = false
-	
-	# Assign cousins
-	assign_cousins()
-	
-func _process(delta):
-	if(Input.is_action_just_pressed("ui_cancel")):
-		get_tree().quit()
-
-func _on_PickA_pressed():
-	reveal()
-
-func _on_Reset_pressed():
-	reset()
-	get_tree().change_scene("res://CousinPicker.tscn")
 			
 func reveal():
-	if(Singleton.pickingCousinGiver):
+	if(pickingCousinGiver):
 		chooseAGiver()
 		$Picker.text = "Receiver"
 	else:
 		chooseAReceiver()
 		$Picker.text = "Giver"
 	
-	Singleton.pickingCousinGiver = !Singleton.pickingCousinGiver
+	pickingCousinGiver = !pickingCousinGiver
 	
 func chooseAGiver():
 	randomPerson = (randi() % Singleton.cousins.size())
@@ -210,7 +194,6 @@ func assign_cousins():
 			if(Singleton.cFamily.has(giver) and Singleton.cFamily.has(receiver)):
 				siblingsDetected = true
 
-
 		index = 1
 		var root_node = get_node("Pairs")
 		
@@ -220,13 +203,7 @@ func assign_cousins():
 			var target_node = root_node.get_node(path)
 			target_node.text = receiver
 			index += 1
-	
-func reset():
-	Singleton.pickingCousinGiver = true
-	Singleton.recentCousinGiver = 99
-	Singleton.cousinGiversAssigned = [false,false,false,false,false,false,false,false,false,false,false,false,false, true]
-	Singleton.cousinReceiversAssigned = [false,false,false,false,false,false,false,false,false,false,false,false,false, true]
-	
+
 func nameFromNumber(number):
 	match(str(number)):
 		'0':

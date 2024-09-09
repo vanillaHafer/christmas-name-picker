@@ -720,30 +720,6 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Reset" type="Button" parent="."]
-modulate = Color( 0.901961, 0, 0, 1 )
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = 755.11
-margin_top = -210.025
-margin_right = 833.11
-margin_bottom = -190.025
-disabled = true
-text = "CLEAR ALL"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Label" type="Label" parent="."]
-margin_left = -64.3489
-margin_top = 37.0706
-margin_right = -24.3489
-margin_bottom = 51.0706
-text = "0"
-align = 2
-
 [node name="MysteryIdea" type="Label" parent="."]
 visible = false
 anchor_left = 0.5
@@ -766,17 +742,6 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Reveal" type="Button" parent="."]
-margin_left = 1226.5
-margin_top = 544.356
-margin_right = 1288.5
-margin_bottom = 564.356
-disabled = true
-text = "REVEAL!"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
 [node name="Present" type="Node2D" parent="."]
 position = Vector2( 588, 55 )
 scale = Vector2( 0.5, 0.5 )
@@ -788,12 +753,6 @@ texture = ExtResource( 11 )
 [node name="Lid" type="Sprite" parent="Present"]
 position = Vector2( 494, 547 )
 texture = ExtResource( 9 )
-
-[node name="IdeaTimer" type="Timer" parent="."]
-one_shot = true
-
-[node name="PresentTimer" type="Timer" parent="."]
-one_shot = true
 
 [node name="Singleton" parent="." instance=ExtResource( 14 )]
 
@@ -814,7 +773,3 @@ margin_bottom = 583.0
 [node name="MuteButton" parent="Mute" instance=ExtResource( 10 )]
 
 [connection signal="pressed" from="PickA" to="." method="_on_PickA_pressed"]
-[connection signal="pressed" from="Reset" to="." method="_on_Reset_pressed"]
-[connection signal="pressed" from="Reveal" to="." method="_on_Reveal_pressed"]
-[connection signal="timeout" from="IdeaTimer" to="." method="_on_IdeaTimer_timeout"]
-[connection signal="timeout" from="PresentTimer" to="." method="_on_PresentTimer_timeout"]

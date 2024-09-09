@@ -116,7 +116,7 @@ position = Vector2( 1143.8, 65.7378 )
 rotation = -0.261799
 scale = Vector2( 0.1, 0.1 )
 frames = SubResource( 1 )
-frame = 95
+frame = 71
 playing = true
 
 [node name="Position2D" type="Position2D" parent="."]
