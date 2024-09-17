@@ -1,6 +1,6 @@
 [gd_scene load_steps=100 format=2]
 
-[ext_resource path="res://SantaSil.gd" type="Script" id=1]
+[ext_resource path="res://Scripts/SantaSil.gd" type="Script" id=1]
 [ext_resource path="res://Santa/45336bf2d2c94e0cb7d11bc3a644b50eYUDLMJjn3Y2DA0wA-71.png" type="Texture" id=2]
 [ext_resource path="res://Santa/45336bf2d2c94e0cb7d11bc3a644b50eYUDLMJjn3Y2DA0wA-79.png" type="Texture" id=3]
 [ext_resource path="res://Santa/45336bf2d2c94e0cb7d11bc3a644b50eYUDLMJjn3Y2DA0wA-82.png" type="Texture" id=4]

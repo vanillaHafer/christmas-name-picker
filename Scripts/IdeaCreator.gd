@@ -22,5 +22,5 @@ func _on_Button_pressed():
 	Singleton.mIdea = $Mom/TextEdit.text
 	Singleton.musicTime = $Singleton/AudioStreamPlayer.get_playback_position()
 	Singleton.santaPosition = $BG/SantaSil/Sprite.global_position
-	get_tree().change_scene("res://NamePicker.tscn")
+	get_tree().change_scene("res://Scenes/NamePicker.tscn")
 

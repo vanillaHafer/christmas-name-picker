@@ -15,12 +15,12 @@ _global_script_class_icons={
 [application]
 
 config/name="ChristmasNamePicker"
-run/main_scene="res://IdeaCreator.tscn"
+run/main_scene="res://Scenes/IdeaCreator.tscn"
 config/icon="res://Assets/Images/Snowflake.png"
 
 [autoload]
 
-Singleton="*res://Singleton.tscn"
+Singleton="*res://Scenes/Singleton.tscn"
 
 [display]
 

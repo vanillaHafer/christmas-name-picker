@@ -58,7 +58,7 @@ func initialize():
 func go_to_cousins_scene():
 	Singleton.musicTime = $Singleton/AudioStreamPlayer.get_playback_position()
 	Singleton.santaPosition = $BG/SantaSil/Sprite.global_position
-	get_tree().change_scene("res://CousinPicker.tscn")
+	get_tree().change_scene("res://Scenes/CousinPicker.tscn")
 
 func _on_PickA_pressed():
 	if(revealing == false):

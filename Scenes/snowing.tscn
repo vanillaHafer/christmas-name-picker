@@ -2,7 +2,7 @@
 
 [ext_resource path="res://Assets/Images/Snowflake.png" type="Texture" id=1]
 [ext_resource path="res://Assets/Images/Snowflake2.png" type="Texture" id=2]
-[ext_resource path="res://snowing.gd" type="Script" id=3]
+[ext_resource path="res://Scripts/snowing.gd" type="Script" id=3]
 
 [node name="snowing" type="Node2D"]
 script = ExtResource( 3 )
