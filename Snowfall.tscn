@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=2]
 
-[ext_resource path="res://Snowflake.png" type="Texture" id=1]
+[ext_resource path="res://Assets/Images/Snowflake.png" type="Texture" id=1]
 
 [node name="Particles2D" type="CPUParticles2D"]
 position = Vector2( 512, -50 )

@@ -97,7 +97,7 @@
 [ext_resource path="res://Santa/45336bf2d2c94e0cb7d11bc3a644b50eYUDLMJjn3Y2DA0wA-80.png" type="Texture" id=95]
 [ext_resource path="res://Santa/45336bf2d2c94e0cb7d11bc3a644b50eYUDLMJjn3Y2DA0wA-90.png" type="Texture" id=96]
 [ext_resource path="res://Santa/45336bf2d2c94e0cb7d11bc3a644b50eYUDLMJjn3Y2DA0wA-93.png" type="Texture" id=97]
-[ext_resource path="res://hohoho.mp3" type="AudioStream" id=98]
+[ext_resource path="res://Assets/Audio/hohoho.mp3" type="AudioStream" id=98]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {

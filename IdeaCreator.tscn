@@ -3,12 +3,12 @@
 [ext_resource path="res://Comic_Neue/ComicNeue-Bold.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Comic_Neue/ComicNeue-Regular.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://IdeaCreator.gd" type="Script" id=3]
-[ext_resource path="res://Christmas.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Images/Christmas.png" type="Texture" id=4]
 [ext_resource path="res://Smoke.tscn" type="PackedScene" id=5]
 [ext_resource path="res://MuteButton.tscn" type="PackedScene" id=6]
 [ext_resource path="res://SantaSil.tscn" type="PackedScene" id=7]
-[ext_resource path="res://Candy button 01 Artboard 1.png" type="Texture" id=8]
-[ext_resource path="res://Candy button 02 Artboard 2.png" type="Texture" id=9]
+[ext_resource path="res://Assets/Images/Candy button 01 Artboard 1.png" type="Texture" id=8]
+[ext_resource path="res://Assets/Images/Candy button 02 Artboard 2.png" type="Texture" id=9]
 [ext_resource path="res://Singleton.tscn" type="PackedScene" id=10]
 
 [sub_resource type="DynamicFont" id=1]
@@ -51,7 +51,7 @@ __meta__ = {
 position = Vector2( 0, 168 )
 
 [node name="Smoke" parent="BG" instance=ExtResource( 5 )]
-frame = 0
+frame = 3
 
 [node name="Label" type="Label" parent="."]
 anchor_left = 0.5

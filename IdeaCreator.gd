@@ -1,6 +1,6 @@
 extends Control
 
-var beam = preload("res://cursor.png")
+var beam = preload("res://Assets/Images/cursor.png")
 
 func _ready():
 	Input.set_custom_mouse_cursor(beam, Input.CURSOR_IBEAM)
