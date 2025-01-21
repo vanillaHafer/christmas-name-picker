@@ -117,16 +117,14 @@ func chooseAReceiver():
 		for i in receiverNames:
 			if(i == giverNames[0]):
 				nameConflictPossible = true
-			else:
-				if(nameConflictPossible == false):
-					nameConflictPossible = false
 		if(nameConflictPossible):
-			while(giverNames[0] != nameFromNumber(randomPerson)):
-				while(receiversAssigned[randomPerson] || randomPerson == recentGiver || nameFromNumber(randomPerson) != giverNames[0]):
-					randomPerson = (randi() % 7)
+			while(receiversAssigned[randomPerson] || randomPerson == recentGiver || nameFromNumber(randomPerson) != giverNames[0]):
+				randomPerson = (randi() % 7)
+
 	receiversAssigned[randomPerson] = true
 	receiverNames.erase(nameFromNumber(randomPerson))
 	receivers += 1
+
 	match(str(recentGiver)):
 		'0':
 			$Pair1/Receiver.text = nameFromNumber(randomPerson)

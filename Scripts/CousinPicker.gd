@@ -8,7 +8,6 @@ var cousinGiversAssigned = [false,false,false,false,false,false,false,false,fals
 var cousinReceiversAssigned = [false,false,false,false,false,false,false,false,false,false,false,false,false, true]
 
 func _ready():
-	# Initialize the scene
 	$RichTextLabel.bbcode_text = "[center]" + str(OS.get_date().year) + " Cousin's Gift Exchange[/center]"
 	randomize()
 	$BG/SantaSil/Sprite.global_position = Singleton.santaPosition
@@ -117,43 +116,30 @@ func chooseAReceiver():
 
 	match(str(Singleton.recentCousinGiver)):
 		'0':
-#			$Pairs/Pair1/Receiver.text = nameFromNumber(randomPerson)
 			$Pairs/Pair1/Receiver.visible = true
 		'1':
-#			$Pairs/Pair2/Receiver.text = nameFromNumber(randomPerson)
 			$Pairs/Pair2/Receiver.visible = true
 		'2':
-#			$Pairs/Pair3/Receiver.text = nameFromNumber(randomPerson)
 			$Pairs/Pair3/Receiver.visible = true
 		'3':
-#			$Pairs/Pair4/Receiver.text = nameFromNumber(randomPerson)
 			$Pairs/Pair4/Receiver.visible = true
 		'4':
-#			$Pairs/Pair5/Receiver.text = nameFromNumber(randomPerson)
 			$Pairs/Pair5/Receiver.visible = true
 		'5':
-#			$Pairs/Pair6/Receiver.text = nameFromNumber(randomPerson)
 			$Pairs/Pair6/Receiver.visible = true
 		'6':
-#			$Pairs/Pair7/Receiver.text = nameFromNumber(randomPerson)
 			$Pairs/Pair7/Receiver.visible = true
 		'7':
-#			$Pairs/Pair8/Receiver.text = nameFromNumber(randomPerson)
 			$Pairs/Pair8/Receiver.visible = true
 		'8':
-#			$Pairs/Pair9/Receiver.text = nameFromNumber(randomPerson)
 			$Pairs/Pair9/Receiver.visible = true
 		'9':
-#			$Pairs/Pair10/Receiver.text = nameFromNumber(randomPerson)
 			$Pairs/Pair10/Receiver.visible = true
 		'10':
-#			$Pairs/Pair11/Receiver.text = nameFromNumber(randomPerson)
 			$Pairs/Pair11/Receiver.visible = true
 		'11':
-#			$Pairs/Pair12/Receiver.text = nameFromNumber(randomPerson)
 			$Pairs/Pair12/Receiver.visible = true
 		'12':
-#			$Pairs/Pair13/Receiver.text = nameFromNumber(randomPerson)
 			$Pairs/Pair13/Receiver.visible = true
 
 
@@ -194,15 +180,15 @@ func assign_cousins():
 			if(Singleton.cFamily.has(giver) and Singleton.cFamily.has(receiver)):
 				siblingsDetected = true
 
-		index = 1
-		var root_node = get_node("Pairs")
-		
-		for giver in cousinMapping.keys():
-			var receiver = cousinMapping[giver]
-			var path = "Pair" + str(index) + "/Receiver"
-			var target_node = root_node.get_node(path)
-			target_node.text = receiver
-			index += 1
+	# Set the receiver text
+	var index = 1
+	var root_node = get_node("Pairs")
+	for giver in cousinMapping.keys():
+		var receiver = cousinMapping[giver]
+		var path = "Pair" + str(index) + "/Receiver"
+		var target_node = root_node.get_node(path)
+		target_node.text = receiver
+		index += 1
 
 func nameFromNumber(number):
 	match(str(number)):
