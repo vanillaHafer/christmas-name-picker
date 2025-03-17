@@ -4,8 +4,8 @@ var randomPerson = Singleton.cousins.size()
 var revealTime = false
 var pickingCousinGiver = true
 var recentCousinGiver = 99
-var cousinGiversAssigned = [false,false,false,false,false,false,false,false,false,false,false,false,false, true]
-var cousinReceiversAssigned = [false,false,false,false,false,false,false,false,false,false,false,false,false, true]
+var cousinGiversAssigned = [false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false, true]
+var cousinReceiversAssigned = [false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false, true]
 
 func _ready():
 	$RichTextLabel.bbcode_text = "[center]" + str(OS.get_date().year) + " Cousin's Gift Exchange[/center]"
@@ -53,6 +53,12 @@ func hide_cousins():
 	$Pairs/Pair12/Receiver.visible = false
 	$Pairs/Pair13/Giver.visible = false
 	$Pairs/Pair13/Receiver.visible = false
+	$Pairs/Pair14/Giver.visible = false
+	$Pairs/Pair14/Receiver.visible = false
+	$Pairs/Pair15/Giver.visible = false
+	$Pairs/Pair15/Receiver.visible = false
+	$Pairs/Pair16/Giver.visible = false
+	$Pairs/Pair16/Receiver.visible = false
 			
 func reveal():
 	if(pickingCousinGiver):
@@ -99,6 +105,12 @@ func chooseAGiver():
 			$Pairs/Pair12/Giver.visible = true
 		'12':
 			$Pairs/Pair13/Giver.visible = true
+		'13':
+			$Pairs/Pair14/Giver.visible = true
+		'14':
+			$Pairs/Pair15/Giver.visible = true
+		'15':
+			$Pairs/Pair16/Giver.visible = true
 	$Picker.text = 'Receiver'
 	
 func chooseAReceiver():
@@ -141,6 +153,12 @@ func chooseAReceiver():
 			$Pairs/Pair12/Receiver.visible = true
 		'12':
 			$Pairs/Pair13/Receiver.visible = true
+		'13':
+			$Pairs/Pair14/Receiver.visible = true
+		'14':
+			$Pairs/Pair15/Receiver.visible = true
+		'15':
+			$Pairs/Pair16/Receiver.visible = true
 
 
 func assign_cousins():
@@ -211,10 +229,16 @@ func nameFromNumber(number):
 		'8':
 			return "Emberlyn"
 		'9':
-			return "Ella Rose"
+			return "???"
 		'10':
-			return "Anya"
-		'11':
-			return "Arabelle"
+			return "Ella Rose"
 		'12':
+			return "Anya"
+		'13':
+			return "Arabelle"
+		'14':
+			return "Gilbert"
+		'15':
 			return "Hudson"
+		'16':
+			return "Lincoln"

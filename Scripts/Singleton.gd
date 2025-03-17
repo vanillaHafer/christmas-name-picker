@@ -22,15 +22,15 @@ var mIdea = ""
 var kFamily = ["Ethan", "Cora", "Haven"]
 var dFamily = ["Cayden", "Ella Joy"]
 var hFamily = ["Jillyan"]
-var sFamily = ["Benjamin", "Gracelyn", "Emberlyn"]
-var tFamily = ["Ella Rose", "Anya", "Arabelle"]
-var cFamily = ["Hudson"]
+var sFamily = ["Benjamin", "Gracelyn", "Emberlyn", "???"]
+var tFamily = ["Ella Rose", "Anya", "Arabelle", "Gilbert"]
+var cFamily = ["Hudson", "Lincoln"]
 var cousins = []
 
 var recentCousinGiver
 var pickingCousinGiver
-var cousinGiversAssigned    = [false,false,false,false,false,false,false,false,false,false,false,false,false, true]
-var cousinReceiversAssigned = [false,false,false,false,false,false,false,false,false,false,false,false,false, true]
+var cousinGiversAssigned    = [false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false, true]
+var cousinReceiversAssigned = [false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false, true]
 var cousinGivers = 0
 var cousinReceivers = 0
 

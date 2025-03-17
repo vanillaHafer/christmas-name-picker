@@ -51,7 +51,6 @@ __meta__ = {
 position = Vector2( 0, 168 )
 
 [node name="Smoke" parent="BG" instance=ExtResource( 5 )]
-frame = 3
 
 [node name="Label" type="Label" parent="."]
 anchor_left = 0.5
