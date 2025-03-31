@@ -11,8 +11,8 @@ var pickingGiver = true
 var nameConflictPossible = false
 var receiversAssigned = [false,false,false,false,false,false,false, true]
 var giversAssigned = [false,false,false,false,false,false,false, true]
-var giverNames = ["Kaleigh and Garrett", "Dillon and Hunter", "Heather and Joe", "Steph and Scot", "Trevor and Emily", "Craig and Claire", "Mom"]
-var receiverNames = ["Kaleigh and Garrett", "Dillon and Hunter", "Heather and Joe", "Steph and Scot", "Trevor and Emily", "Craig and Claire", "Mom"]
+var giverNames = ["Kaleigh and Garrett", "Dillon and Hunter", "Heather", "Steph and Scot", "Trevor and Emily", "Craig and Claire", "Mom"]
+var receiverNames = ["Kaleigh and Garrett", "Dillon and Hunter", "Heather", "Steph and Scot", "Trevor and Emily", "Craig and Claire", "Mom"]
 var recentGiver
 onready var lidPositionY = $Present/Lid.position.y
 
@@ -175,7 +175,7 @@ func nameFromNumber(number):
 		1:
 			return "Dillon and Hunter"
 		2:
-			return "Heather and Joe"
+			return "Heather"
 		3:
 			return "Steph and Scot"
 		4:

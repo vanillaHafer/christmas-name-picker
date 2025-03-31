@@ -147,7 +147,8 @@ margin_top = 157.0
 margin_right = 266.732
 margin_bottom = 194.0
 custom_fonts/font = SubResource( 2 )
-text = "Heather and Joe"
+text = "Heather"
+align = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }

@@ -321,7 +321,7 @@ margin_top = -14.0
 margin_right = -121.311
 margin_bottom = 14.0
 custom_fonts/font = SubResource( 3 )
-text = "Heather and Joe"
+text = "Heather"
 align = 1
 __meta__ = {
 "_edit_use_anchors_": false
@@ -337,7 +337,8 @@ margin_top = -18.5
 margin_right = 88.0
 margin_bottom = 18.5
 custom_fonts/font = SubResource( 4 )
-text = "are giving to"
+text = "is giving to"
+align = 1
 
 [node name="Panel2" type="Panel" parent="Pair3"]
 modulate = Color( 1, 1, 1, 0.490196 )
