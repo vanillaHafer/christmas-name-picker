@@ -1,6 +1,6 @@
 extends Control
 
-var randomPerson = randi() % 7
+var randomPerson = randi() % 8
 var presentVisibility = 1
 var ideaVisibility = 0
 var receivers = 0
@@ -9,10 +9,10 @@ var revealing = false
 var presentOpening = false
 var pickingGiver = true
 var nameConflictPossible = false
-var receiversAssigned = [false,false,false,false,false,false,false, true]
-var giversAssigned = [false,false,false,false,false,false,false, true]
-var giverNames = ["Kaleigh and Garrett", "Dillon and Hunter", "Heather", "Steph and Scot", "Trevor and Emily", "Craig and Claire", "Mom"]
-var receiverNames = ["Kaleigh and Garrett", "Dillon and Hunter", "Heather", "Steph and Scot", "Trevor and Emily", "Craig and Claire", "Mom"]
+var receiversAssigned = [false,false,false,false,false,false,false, false, true]
+var giversAssigned = [false,false,false,false,false,false,false, false, true]
+var giverNames = ["Kaleigh and Garrett", "Dillon and Hunter", "Heather", "Steph and Scot", "Trevor and Emily", "Craig and Claire", "Mom", "Ethan"]
+var receiverNames = ["Kaleigh and Garrett", "Dillon and Hunter", "Heather", "Steph and Scot", "Trevor and Emily", "Craig and Claire", "Mom", "Ethan"]
 var recentGiver
 onready var lidPositionY = $Present/Lid.position.y
 
@@ -54,6 +54,8 @@ func initialize():
 	$Pair6/Receiver.visible = false
 	$Pair7/Giver.visible = false
 	$Pair7/Receiver.visible = false
+	$Pair8/Giver.visible = false
+	$Pair8/Receiver.visible = false
 
 func go_to_cousins_scene():
 	Singleton.musicTime = $Singleton/AudioStreamPlayer.get_playback_position()
@@ -72,10 +74,10 @@ func _on_PickA_pressed():
 		reveal()
 			
 func chooseAGiver():
-	randomPerson = (randi() % 7)
+	randomPerson = (randi() % 8)
 
 	while(giversAssigned[randomPerson]):
-		randomPerson = (randi() % 7)
+		randomPerson = (randi() % 8)
 
 	giversAssigned[randomPerson] = true
 	recentGiver = randomPerson
@@ -104,13 +106,16 @@ func chooseAGiver():
 		6:
 			$Pair7/Giver.text = nameFromNumber(randomPerson)
 			$Pair7/Giver.visible = true
+		7:
+			$Pair8/Giver.text = nameFromNumber(randomPerson)
+			$Pair8/Giver.visible = true
 			
 	$Picker.text = 'Receiver'
 	
 func chooseAReceiver():
-	randomPerson = (randi() % 7)
+	randomPerson = (randi() % 8)
 	while(receiversAssigned[randomPerson] || randomPerson == recentGiver):
-		randomPerson = (randi() % 7)
+		randomPerson = (randi() % 8)
 	
 	# Check to make sure the last receiver won't be the same as the last giver
 	if(receivers == 5):
@@ -119,7 +124,7 @@ func chooseAReceiver():
 				nameConflictPossible = true
 		if(nameConflictPossible):
 			while(receiversAssigned[randomPerson] || randomPerson == recentGiver || nameFromNumber(randomPerson) != giverNames[0]):
-				randomPerson = (randi() % 7)
+				randomPerson = (randi() % 8)
 
 	receiversAssigned[randomPerson] = true
 	receiverNames.erase(nameFromNumber(randomPerson))
@@ -147,8 +152,11 @@ func chooseAReceiver():
 		'6':
 			$Pair7/Receiver.text = nameFromNumber(randomPerson)
 			$Pair7/Receiver.visible = true
+		'7':
+			$Pair8/Receiver.text = nameFromNumber(randomPerson)
+			$Pair8/Receiver.visible = true
 		
-	if(receivers <= 6):
+	if(receivers <= 7):
 		$Picker.text = 'Giver'
 	else:
 		$Picker.text = 'Reveal!'
@@ -184,12 +192,14 @@ func nameFromNumber(number):
 			return "Craig and Claire"
 		6:
 			return "Mom"
+		7:
+			return "Ethan"
 			
 func reveal():
 	$PickA.queue_free()
 	$Picker.queue_free()
 	presentOpening = true
-	match(randi() % 7):
+	match(randi() % 8):
 		0:
 			$MysteryIdea.text = Singleton.kIdea
 		1:
@@ -204,3 +214,5 @@ func reveal():
 			$MysteryIdea.text = Singleton.cIdea
 		6:
 			$MysteryIdea.text = Singleton.mIdea
+		7:
+			$MysteryIdea.text = Singleton.eIdea

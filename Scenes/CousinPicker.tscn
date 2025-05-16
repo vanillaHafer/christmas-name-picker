@@ -106,10 +106,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = 318.823
-margin_top = -20.0
-margin_right = 358.823
-margin_bottom = 20.0
+margin_left = 318.824
+margin_top = -17.6471
+margin_right = 358.824
+margin_bottom = 22.3529
 rect_scale = Vector2( 0.75, 0.75 )
 
 [node name="Panel" type="Panel" parent="Pairs/Pair1"]
@@ -137,8 +137,11 @@ margin_top = -14.0
 margin_right = -121.311
 margin_bottom = 14.0
 custom_fonts/font = SubResource( 3 )
-text = "Ethan"
+text = "Cora"
 align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="isGivingTo" type="Label" parent="Pairs/Pair1"]
 anchor_left = 0.5
@@ -189,10 +192,13 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 margin_left = 318.824
-margin_top = 40.0
+margin_top = 42.3529
 margin_right = 358.824
-margin_bottom = 80.0
+margin_bottom = 82.3529
 rect_scale = Vector2( 0.75, 0.75 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Panel" type="Panel" parent="Pairs/Pair2"]
 modulate = Color( 1, 1, 1, 0.490196 )
@@ -219,7 +225,7 @@ margin_top = -14.0
 margin_right = -121.311
 margin_bottom = 14.0
 custom_fonts/font = SubResource( 3 )
-text = "Cora"
+text = "Haven"
 align = 1
 __meta__ = {
 "_edit_use_anchors_": false
@@ -274,13 +280,10 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 margin_left = 318.824
-margin_top = 100.0
+margin_top = 118.824
 margin_right = 358.824
-margin_bottom = 140.0
+margin_bottom = 158.824
 rect_scale = Vector2( 0.75, 0.75 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="Panel" type="Panel" parent="Pairs/Pair3"]
 modulate = Color( 1, 1, 1, 0.490196 )
@@ -307,7 +310,7 @@ margin_top = -14.0
 margin_right = -121.311
 margin_bottom = 14.0
 custom_fonts/font = SubResource( 3 )
-text = "Haven"
+text = "Cayden"
 align = 1
 __meta__ = {
 "_edit_use_anchors_": false
@@ -362,10 +365,13 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 margin_left = 318.824
-margin_top = 160.0
+margin_top = 178.824
 margin_right = 358.824
-margin_bottom = 200.0
+margin_bottom = 218.824
 rect_scale = Vector2( 0.75, 0.75 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Panel" type="Panel" parent="Pairs/Pair4"]
 modulate = Color( 1, 1, 1, 0.490196 )
@@ -392,7 +398,7 @@ margin_top = -14.0
 margin_right = -121.311
 margin_bottom = 14.0
 custom_fonts/font = SubResource( 3 )
-text = "Cayden"
+text = "Ella Joy"
 align = 1
 __meta__ = {
 "_edit_use_anchors_": false
@@ -446,101 +452,13 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = 318.824
-margin_top = 220.0
-margin_right = 358.824
-margin_bottom = 260.0
+margin_left = 318.823
+margin_top = 261.176
+margin_right = 358.823
+margin_bottom = 301.176
 rect_scale = Vector2( 0.75, 0.75 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="Panel" type="Panel" parent="Pairs/Pair5"]
-modulate = Color( 1, 1, 1, 0.490196 )
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -339.997
-margin_top = -24.0
-margin_right = -109.997
-margin_bottom = 24.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Giver" type="Label" parent="Pairs/Pair5"]
-modulate = Color( 0.988235, 0.988235, 0.988235, 1 )
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -331.311
-margin_top = -14.0
-margin_right = -121.311
-margin_bottom = 14.0
-custom_fonts/font = SubResource( 3 )
-text = "Ella Joy"
-align = 1
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="isGivingTo" type="Label" parent="Pairs/Pair5"]
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -80.0
-margin_top = -18.5
-margin_right = 73.0
-margin_bottom = 18.5
-custom_fonts/font = SubResource( 4 )
-text = "is giving to"
-
-[node name="Panel2" type="Panel" parent="Pairs/Pair5"]
-modulate = Color( 1, 1, 1, 0.490196 )
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = 103.955
-margin_top = -24.0
-margin_right = 333.955
-margin_bottom = 24.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Receiver" type="Label" parent="Pairs/Pair5"]
-modulate = Color( 0.988235, 0.988235, 0.988235, 1 )
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = 115.269
-margin_top = -14.0
-margin_right = 325.269
-margin_bottom = 14.0
-custom_fonts/font = SubResource( 5 )
-text = "Kaleigh and Garrett"
-align = 1
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Pair6" type="Control" parent="Pairs"]
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = 318.823
-margin_top = 280.0
-margin_right = 358.823
-margin_bottom = 320.0
-rect_scale = Vector2( 0.75, 0.75 )
-
-[node name="Panel" type="Panel" parent="Pairs/Pair6"]
 modulate = Color( 1, 1, 1, 0.490196 )
 anchor_left = 0.5
 anchor_top = 0.5
@@ -554,7 +472,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Giver" type="Label" parent="Pairs/Pair6"]
+[node name="Giver" type="Label" parent="Pairs/Pair5"]
 modulate = Color( 0.988235, 0.988235, 0.988235, 1 )
 anchor_left = 0.5
 anchor_top = 0.5
@@ -571,7 +489,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="isGivingTo" type="Label" parent="Pairs/Pair6"]
+[node name="isGivingTo" type="Label" parent="Pairs/Pair5"]
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -586,7 +504,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Panel2" type="Panel" parent="Pairs/Pair6"]
+[node name="Panel2" type="Panel" parent="Pairs/Pair5"]
 modulate = Color( 1, 1, 1, 0.490196 )
 anchor_left = 0.5
 anchor_top = 0.5
@@ -600,7 +518,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Receiver" type="Label" parent="Pairs/Pair6"]
+[node name="Receiver" type="Label" parent="Pairs/Pair5"]
 modulate = Color( 0.988235, 0.988235, 0.988235, 1 )
 anchor_left = 0.5
 anchor_top = 0.5
@@ -617,7 +535,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Pair7" type="Control" parent="Pairs"]
+[node name="Pair6" type="Control" parent="Pairs"]
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -628,7 +546,7 @@ margin_right = 894.118
 margin_bottom = 23.5294
 rect_scale = Vector2( 0.75, 0.75 )
 
-[node name="Panel" type="Panel" parent="Pairs/Pair7"]
+[node name="Panel" type="Panel" parent="Pairs/Pair6"]
 modulate = Color( 1, 1, 1, 0.490196 )
 anchor_left = 0.5
 anchor_top = 0.5
@@ -642,7 +560,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Giver" type="Label" parent="Pairs/Pair7"]
+[node name="Giver" type="Label" parent="Pairs/Pair6"]
 modulate = Color( 0.988235, 0.988235, 0.988235, 1 )
 anchor_left = 0.5
 anchor_top = 0.5
@@ -659,7 +577,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="isGivingTo" type="Label" parent="Pairs/Pair7"]
+[node name="isGivingTo" type="Label" parent="Pairs/Pair6"]
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -675,7 +593,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Panel2" type="Panel" parent="Pairs/Pair7"]
+[node name="Panel2" type="Panel" parent="Pairs/Pair6"]
 modulate = Color( 1, 1, 1, 0.490196 )
 anchor_left = 0.5
 anchor_top = 0.5
@@ -689,7 +607,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Receiver" type="Label" parent="Pairs/Pair7"]
+[node name="Receiver" type="Label" parent="Pairs/Pair6"]
 modulate = Color( 0.988235, 0.988235, 0.988235, 1 )
 anchor_left = 0.5
 anchor_top = 0.5
@@ -706,7 +624,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Pair8" type="Control" parent="Pairs"]
+[node name="Pair7" type="Control" parent="Pairs"]
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -715,6 +633,91 @@ margin_left = 854.117
 margin_top = 40.0
 margin_right = 894.117
 margin_bottom = 80.0
+rect_scale = Vector2( 0.75, 0.75 )
+
+[node name="Panel" type="Panel" parent="Pairs/Pair7"]
+modulate = Color( 1, 1, 1, 0.490196 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -339.997
+margin_top = -24.0
+margin_right = -109.997
+margin_bottom = 24.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Giver" type="Label" parent="Pairs/Pair7"]
+modulate = Color( 0.988235, 0.988235, 0.988235, 1 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -331.311
+margin_top = -14.0
+margin_right = -121.311
+margin_bottom = 14.0
+custom_fonts/font = SubResource( 3 )
+text = "Gracelyn"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="isGivingTo" type="Label" parent="Pairs/Pair7"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -80.0
+margin_top = -18.5
+margin_right = 73.0
+margin_bottom = 18.5
+custom_fonts/font = SubResource( 4 )
+text = "is giving to"
+
+[node name="Panel2" type="Panel" parent="Pairs/Pair7"]
+modulate = Color( 1, 1, 1, 0.490196 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 103.955
+margin_top = -24.0
+margin_right = 333.955
+margin_bottom = 24.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Receiver" type="Label" parent="Pairs/Pair7"]
+modulate = Color( 0.988235, 0.988235, 0.988235, 1 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 115.269
+margin_top = -14.0
+margin_right = 325.269
+margin_bottom = 14.0
+custom_fonts/font = SubResource( 5 )
+text = "Kaleigh and Garrett"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pair8" type="Control" parent="Pairs"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 854.117
+margin_top = 100.0
+margin_right = 894.117
+margin_bottom = 140.0
 rect_scale = Vector2( 0.75, 0.75 )
 
 [node name="Panel" type="Panel" parent="Pairs/Pair8"]
@@ -742,7 +745,7 @@ margin_top = -14.0
 margin_right = -121.311
 margin_bottom = 14.0
 custom_fonts/font = SubResource( 3 )
-text = "Gracelyn"
+text = "Emberlyn"
 align = 1
 __meta__ = {
 "_edit_use_anchors_": false
@@ -797,9 +800,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 margin_left = 854.117
-margin_top = 100.0
+margin_top = 160.0
 margin_right = 894.117
-margin_bottom = 140.0
+margin_bottom = 200.0
 rect_scale = Vector2( 0.75, 0.75 )
 
 [node name="Panel" type="Panel" parent="Pairs/Pair9"]
@@ -827,11 +830,8 @@ margin_top = -14.0
 margin_right = -121.311
 margin_bottom = 14.0
 custom_fonts/font = SubResource( 3 )
-text = "Emberlyn"
+text = "???"
 align = 1
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="isGivingTo" type="Label" parent="Pairs/Pair9"]
 anchor_left = 0.5
@@ -881,10 +881,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = 854.117
-margin_top = 160.0
-margin_right = 894.117
-margin_bottom = 200.0
+margin_left = 854.118
+margin_top = 220.0
+margin_right = 894.118
+margin_bottom = 260.0
 rect_scale = Vector2( 0.75, 0.75 )
 
 [node name="Panel" type="Panel" parent="Pairs/Pair10"]
@@ -912,8 +912,11 @@ margin_top = -14.0
 margin_right = -121.311
 margin_bottom = 14.0
 custom_fonts/font = SubResource( 3 )
-text = "???"
+text = "Ella Rose"
 align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="isGivingTo" type="Label" parent="Pairs/Pair10"]
 anchor_left = 0.5
@@ -963,14 +966,11 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = 854.118
-margin_top = 220.0
-margin_right = 894.118
-margin_bottom = 260.0
+margin_left = 854.117
+margin_top = 280.0
+margin_right = 894.117
+margin_bottom = 320.0
 rect_scale = Vector2( 0.75, 0.75 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="Panel" type="Panel" parent="Pairs/Pair11"]
 modulate = Color( 1, 1, 1, 0.490196 )
@@ -997,7 +997,7 @@ margin_top = -14.0
 margin_right = -121.311
 margin_bottom = 14.0
 custom_fonts/font = SubResource( 3 )
-text = "Ella Rose"
+text = "Anya"
 align = 1
 __meta__ = {
 "_edit_use_anchors_": false
@@ -1052,10 +1052,13 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 margin_left = 854.117
-margin_top = 280.0
+margin_top = 342.353
 margin_right = 894.117
-margin_bottom = 320.0
+margin_bottom = 382.353
 rect_scale = Vector2( 0.75, 0.75 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Panel" type="Panel" parent="Pairs/Pair12"]
 modulate = Color( 1, 1, 1, 0.490196 )
@@ -1082,11 +1085,8 @@ margin_top = -14.0
 margin_right = -121.311
 margin_bottom = 14.0
 custom_fonts/font = SubResource( 3 )
-text = "Anya"
+text = "Arabelle"
 align = 1
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="isGivingTo" type="Label" parent="Pairs/Pair12"]
 anchor_left = 0.5
@@ -1137,9 +1137,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 margin_left = 854.117
-margin_top = 342.353
+margin_top = 391.765
 margin_right = 894.117
-margin_bottom = 382.353
+margin_bottom = 431.765
 rect_scale = Vector2( 0.75, 0.75 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -1170,7 +1170,7 @@ margin_top = -14.0
 margin_right = -121.311
 margin_bottom = 14.0
 custom_fonts/font = SubResource( 3 )
-text = "Arabelle"
+text = "Gilbert"
 align = 1
 
 [node name="isGivingTo" type="Label" parent="Pairs/Pair13"]
@@ -1221,14 +1221,11 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = 854.117
-margin_top = 391.765
-margin_right = 894.117
-margin_bottom = 431.765
+margin_left = 317.647
+margin_top = 340.0
+margin_right = 357.647
+margin_bottom = 380.0
 rect_scale = Vector2( 0.75, 0.75 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="Panel" type="Panel" parent="Pairs/Pair14"]
 modulate = Color( 1, 1, 1, 0.490196 )
@@ -1240,9 +1237,6 @@ margin_left = -339.997
 margin_top = -24.0
 margin_right = -109.997
 margin_bottom = 24.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="Giver" type="Label" parent="Pairs/Pair14"]
 modulate = Color( 0.988235, 0.988235, 0.988235, 1 )
@@ -1255,8 +1249,11 @@ margin_top = -14.0
 margin_right = -121.311
 margin_bottom = 14.0
 custom_fonts/font = SubResource( 3 )
-text = "Gilbert"
+text = "Hudson"
 align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="isGivingTo" type="Label" parent="Pairs/Pair14"]
 anchor_left = 0.5
@@ -1276,10 +1273,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = 103.955
-margin_top = -24.0
-margin_right = 333.955
-margin_bottom = 24.0
+margin_left = 104.555
+margin_top = -20.0
+margin_right = 334.555
+margin_bottom = 28.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -1291,9 +1288,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 margin_left = 115.269
-margin_top = -14.0
+margin_top = -10.584
 margin_right = 325.269
-margin_bottom = 14.0
+margin_bottom = 17.416
 custom_fonts/font = SubResource( 5 )
 text = "Kaleigh and Garrett"
 align = 1
@@ -1307,9 +1304,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 margin_left = 317.647
-margin_top = 340.0
+margin_top = 392.941
 margin_right = 357.647
-margin_bottom = 380.0
+margin_bottom = 432.941
 rect_scale = Vector2( 0.75, 0.75 )
 
 [node name="Panel" type="Panel" parent="Pairs/Pair15"]
@@ -1322,6 +1319,9 @@ margin_left = -339.997
 margin_top = -24.0
 margin_right = -109.997
 margin_bottom = 24.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Giver" type="Label" parent="Pairs/Pair15"]
 modulate = Color( 0.988235, 0.988235, 0.988235, 1 )
@@ -1334,7 +1334,7 @@ margin_top = -14.0
 margin_right = -121.311
 margin_bottom = 14.0
 custom_fonts/font = SubResource( 3 )
-text = "Hudson"
+text = "Lincoln"
 align = 1
 __meta__ = {
 "_edit_use_anchors_": false
@@ -1367,91 +1367,6 @@ __meta__ = {
 }
 
 [node name="Receiver" type="Label" parent="Pairs/Pair15"]
-modulate = Color( 0.988235, 0.988235, 0.988235, 1 )
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = 115.269
-margin_top = -10.584
-margin_right = 325.269
-margin_bottom = 17.416
-custom_fonts/font = SubResource( 5 )
-text = "Kaleigh and Garrett"
-align = 1
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Pair16" type="Control" parent="Pairs"]
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = 317.647
-margin_top = 392.941
-margin_right = 357.647
-margin_bottom = 432.941
-rect_scale = Vector2( 0.75, 0.75 )
-
-[node name="Panel" type="Panel" parent="Pairs/Pair16"]
-modulate = Color( 1, 1, 1, 0.490196 )
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -339.997
-margin_top = -24.0
-margin_right = -109.997
-margin_bottom = 24.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Giver" type="Label" parent="Pairs/Pair16"]
-modulate = Color( 0.988235, 0.988235, 0.988235, 1 )
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -331.311
-margin_top = -14.0
-margin_right = -121.311
-margin_bottom = 14.0
-custom_fonts/font = SubResource( 3 )
-text = "Lincoln"
-align = 1
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="isGivingTo" type="Label" parent="Pairs/Pair16"]
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -80.0
-margin_top = -18.5
-margin_right = 73.0
-margin_bottom = 18.5
-custom_fonts/font = SubResource( 4 )
-text = "is giving to"
-
-[node name="Panel2" type="Panel" parent="Pairs/Pair16"]
-modulate = Color( 1, 1, 1, 0.490196 )
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = 104.555
-margin_top = -20.0
-margin_right = 334.555
-margin_bottom = 28.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Receiver" type="Label" parent="Pairs/Pair16"]
 modulate = Color( 0.988235, 0.988235, 0.988235, 1 )
 anchor_left = 0.5
 anchor_top = 0.5

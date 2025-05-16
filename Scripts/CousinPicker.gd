@@ -4,8 +4,8 @@ var randomPerson = Singleton.cousins.size()
 var revealTime = false
 var pickingCousinGiver = true
 var recentCousinGiver = 99
-var cousinGiversAssigned = [false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false, true]
-var cousinReceiversAssigned = [false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false, true]
+var cousinGiversAssigned = [false,false,false,false,false,false,false,false,false,false,false,false,false,false,false, true]
+var cousinReceiversAssigned = [false,false,false,false,false,false,false,false,false,false,false,false,false,false,false, true]
 
 func _ready():
 	$RichTextLabel.bbcode_text = "[center]" + str(OS.get_date().year) + " Cousin's Gift Exchange[/center]"
@@ -57,8 +57,6 @@ func hide_cousins():
 	$Pairs/Pair14/Receiver.visible = false
 	$Pairs/Pair15/Giver.visible = false
 	$Pairs/Pair15/Receiver.visible = false
-	$Pairs/Pair16/Giver.visible = false
-	$Pairs/Pair16/Receiver.visible = false
 			
 func reveal():
 	if(pickingCousinGiver):
@@ -109,8 +107,6 @@ func chooseAGiver():
 			$Pairs/Pair14/Giver.visible = true
 		'14':
 			$Pairs/Pair15/Giver.visible = true
-		'15':
-			$Pairs/Pair16/Giver.visible = true
 	$Picker.text = 'Receiver'
 	
 func chooseAReceiver():
@@ -157,8 +153,6 @@ func chooseAReceiver():
 			$Pairs/Pair14/Receiver.visible = true
 		'14':
 			$Pairs/Pair15/Receiver.visible = true
-		'15':
-			$Pairs/Pair16/Receiver.visible = true
 
 
 func assign_cousins():
@@ -211,34 +205,32 @@ func assign_cousins():
 func nameFromNumber(number):
 	match(str(number)):
 		'0':
-			return "Ethan"
-		'1':
 			return "Cora"
-		'2':
+		'1':
 			return "Haven"
-		'3':
+		'2':
 			return "Cayden"
-		'4':
+		'3':
 			return "Ella Joy"
-		'5':
+		'4':
 			return "Jillyan"
-		'6':
+		'5':
 			return "Benjamin"
-		'7':
+		'6':
 			return "Gracelyn"
-		'8':
+		'7':
 			return "Emberlyn"
-		'9':
+		'8':
 			return "???"
-		'10':
+		'9':
 			return "Ella Rose"
-		'12':
+		'10':
 			return "Anya"
-		'13':
+		'11':
 			return "Arabelle"
-		'14':
+		'12':
 			return "Gilbert"
-		'15':
+		'13':
 			return "Hudson"
-		'16':
+		'14':
 			return "Lincoln"

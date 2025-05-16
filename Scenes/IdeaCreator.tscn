@@ -259,6 +259,42 @@ margin_left = 59.4423
 margin_top = 225.0
 margin_right = 274.442
 margin_bottom = 263.0
+focus_next = NodePath("../../Button")
+custom_fonts/font = SubResource( 3 )
+align = 1
+max_length = 40
+caret_blink = true
+caret_blink_speed = 0.3
+
+[node name="Ethan" type="Control" parent="."]
+margin_left = 2.0
+margin_top = 292.742
+margin_right = 42.0
+margin_bottom = 332.742
+
+[node name="Label" type="Label" parent="Ethan"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 31.5965
+margin_top = 157.0
+margin_right = 268.596
+margin_bottom = 194.0
+custom_fonts/font = SubResource( 2 )
+text = "Ethan"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextEdit" type="LineEdit" parent="Ethan"]
+modulate = Color( 1, 1, 1, 0.898039 )
+margin_left = 59.4423
+margin_top = 225.0
+margin_right = 274.442
+margin_bottom = 263.0
+focus_next = NodePath("../../Mom/TextEdit")
 custom_fonts/font = SubResource( 3 )
 align = 1
 max_length = 40
@@ -292,7 +328,7 @@ margin_left = 59.4423
 margin_top = 225.0
 margin_right = 274.442
 margin_bottom = 263.0
-focus_next = NodePath("../../Mom/TextEdit")
+focus_next = NodePath("../../Ethan/TextEdit")
 custom_fonts/font = SubResource( 3 )
 align = 1
 max_length = 40
@@ -328,9 +364,9 @@ text = "NEXT"
 
 [node name="Mute" type="Control" parent="."]
 margin_left = 31.0
-margin_top = 125.0
+margin_top = -318.0
 margin_right = 71.0
-margin_bottom = 165.0
+margin_bottom = -278.0
 rect_scale = Vector2( 0.75, 0.75 )
 
 [node name="Panel" type="Panel" parent="Mute"]

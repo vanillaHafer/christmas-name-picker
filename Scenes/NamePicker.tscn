@@ -115,9 +115,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 margin_left = -166.759
-margin_top = -169.349
+margin_top = -198.0
 margin_right = -126.759
-margin_bottom = -129.349
+margin_bottom = -158.0
 rect_scale = Vector2( 0.75, 0.75 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -203,9 +203,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 margin_left = -166.759
-margin_top = -100.995
+margin_top = -129.646
 margin_right = -126.759
-margin_bottom = -60.9946
+margin_bottom = -89.6456
 rect_scale = Vector2( 0.75, 0.75 )
 
 [node name="Panel" type="Panel" parent="Pair2"]
@@ -288,9 +288,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 margin_left = -168.0
-margin_top = -34.2295
+margin_top = -62.8805
 margin_right = -128.0
-margin_bottom = 5.77051
+margin_bottom = -22.8805
 rect_scale = Vector2( 0.75, 0.75 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -377,9 +377,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 margin_left = -166.759
-margin_top = 30.9463
+margin_top = 2.29529
 margin_right = -126.759
-margin_bottom = 70.9463
+margin_bottom = 42.2953
 rect_scale = Vector2( 0.75, 0.75 )
 
 [node name="Panel" type="Panel" parent="Pair4"]
@@ -462,9 +462,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 margin_left = -166.759
-margin_top = 94.5313
+margin_top = 65.8803
 margin_right = -126.759
-margin_bottom = 134.531
+margin_bottom = 105.88
 rect_scale = Vector2( 0.75, 0.75 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -550,9 +550,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 margin_left = -166.759
-margin_top = 154.938
+margin_top = 126.287
 margin_right = -126.759
-margin_bottom = 194.938
+margin_bottom = 166.287
 rect_scale = Vector2( 0.75, 0.75 )
 
 [node name="Panel" type="Panel" parent="Pair6"]
@@ -638,9 +638,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 margin_left = -166.759
-margin_top = 214.0
+margin_top = 185.349
 margin_right = -126.759
-margin_bottom = 254.0
+margin_bottom = 225.349
 rect_scale = Vector2( 0.75, 0.75 )
 
 [node name="Panel" type="Panel" parent="Pair7"]
@@ -705,6 +705,92 @@ __meta__ = {
 }
 
 [node name="Receiver" type="Label" parent="Pair7"]
+modulate = Color( 0.988235, 0.988235, 0.988235, 1 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 115.269
+margin_top = -9.33337
+margin_right = 325.269
+margin_bottom = 18.6666
+custom_fonts/font = SubResource( 5 )
+text = "Kaleigh and Garrett"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pair8" type="Control" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -166.759
+margin_top = 244.349
+margin_right = -126.759
+margin_bottom = 284.349
+rect_scale = Vector2( 0.75, 0.75 )
+
+[node name="Panel" type="Panel" parent="Pair8"]
+modulate = Color( 1, 1, 1, 0.490196 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -339.997
+margin_top = -24.0
+margin_right = -109.997
+margin_bottom = 24.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Giver" type="Label" parent="Pair8"]
+modulate = Color( 0.988235, 0.988235, 0.988235, 1 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -331.311
+margin_top = -14.0
+margin_right = -121.311
+margin_bottom = 14.0
+custom_fonts/font = SubResource( 3 )
+text = "Ethan"
+align = 1
+
+[node name="isGivingTo" type="Label" parent="Pair8"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -104.321
+margin_top = -18.5
+margin_right = 71.6791
+margin_bottom = 18.5
+custom_fonts/font = SubResource( 4 )
+text = "is giving to"
+align = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel2" type="Panel" parent="Pair8"]
+modulate = Color( 1, 1, 1, 0.490196 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 104.555
+margin_top = -20.0
+margin_right = 334.555
+margin_bottom = 28.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Receiver" type="Label" parent="Pair8"]
 modulate = Color( 0.988235, 0.988235, 0.988235, 1 )
 anchor_left = 0.5
 anchor_top = 0.5
