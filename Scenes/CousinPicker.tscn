@@ -830,7 +830,7 @@ margin_top = -14.0
 margin_right = -121.311
 margin_bottom = 14.0
 custom_fonts/font = SubResource( 3 )
-text = "???"
+text = "Declan"
 align = 1
 
 [node name="isGivingTo" type="Label" parent="Pairs/Pair9"]
